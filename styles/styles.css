@@ -24,7 +24,7 @@
 .cabecera {
     display: flex;
     grid-area: cabecera;
-    background-color: rgb(20, 100, 120);
+    background-image:linear-gradient(30deg, rgb(20, 100, 120), rgb(7, 43, 52) );
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
