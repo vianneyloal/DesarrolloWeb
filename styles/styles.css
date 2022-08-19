@@ -24,7 +24,7 @@
 .cabecera {
     display: flex;
     grid-area: cabecera;
-    background-color: rgb(20, 100, 120);
+    background-image:linear-gradient(60deg, rgb(20, 100, 120), rgb(3, 44, 54)) ;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -84,8 +84,36 @@
 }
 
 .card__intro:hover{
-    border: solid 2px rgb(20, 100, 120);
     box-shadow: 0 20px 20px rgb(0 0 0 / 20%);
+}
+
+.card__caso{
+    width: 500px;
+    height: 350px;
+    transition: height 2s;
+    animation-name: animaciones;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+.card__caso:hover{
+    box-shadow: 0 20px 20px rgb(0 0 0 / 20%);
+    height: 380px;
+}
+
+@keyframes animaciones {
+    0% {background-color: rgb(82, 82, 82);}
+    25% {background-color: rgb(37, 37, 52);}
+    50% { background-color: rgb(3, 44, 54);}
+    75% { background-color: rgb(20, 100, 120);}
+    100% {background-color: rgb(82, 82, 82);}   
+}
+
+@keyframes animaciondos {
+    from {background-color: rgb(3, 44, 54);}
+    to {background-color: rgb(20, 100, 120);}
+    
 }
 
 .imagen {
@@ -95,6 +123,11 @@
 
 .imagen__inicio {
     height: 100%;
+    width: 100%;
+}
+
+.imagen__caso {
+    height: 70%;
     width: 100%;
 }
 
@@ -124,6 +157,16 @@
     margin-right: 20px;
     margin-top: 10px;
 }
+
+.intro__caso {
+    color: rgb(196, 196, 196);
+    font-family: poppins, sans-serif;
+    font-style: ExtraBold;
+    font-size: 30px;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
 
 
 .footer {
