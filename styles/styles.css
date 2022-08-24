@@ -45,11 +45,9 @@ body{
 .cabecera {
     display: flex;
     grid-area: cabecera;
-<<<<<<< HEAD
     background-image:linear-gradient(60deg, rgb(20, 100, 120), rgb(3, 44, 54)) ;
-=======
+
     background-image:linear-gradient(30deg, rgb(20, 100, 120), rgb(7, 43, 52) );
->>>>>>> v2.Bootstrap
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
