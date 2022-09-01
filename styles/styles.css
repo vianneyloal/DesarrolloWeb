@@ -39,6 +39,9 @@ header nav ul li a:hover {
   color: rgb(37, 37, 52);
 }
 
+main {
+  grid-area: main;
+}
 main section {
   display: flex;
   justify-content: space-around;
@@ -49,43 +52,24 @@ main section div {
   width: 500px;
   height: 650px;
 }
-main section div:hover {
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-areas: "cabecera" "main" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 130px auto 100px;
+}
+
+.card__intro:hover {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
-main section div div {
-  height: 50%;
-  width: 100%;
-}
-main section div div img {
-  height: 100%;
-  width: 100%;
-}
-main section div div {
-  padding: 5px;
-}
-main section div div h2 {
-  border-left: solid 12px rgb(37, 37, 52);
-  color: rgb(20, 100, 120);
-  font-family: poppins, sans-serif;
-  font-style: ExtraBold;
-  font-size: 40px;
-  padding-left: 15px;
-  margin-left: 10px;
-  margin-top: 10px;
-}
-main section div div p {
-  color: rgb(82, 82, 82);
-  font-family: poppins, sans-serif;
-  font-style: ExtraLight;
-  font-size: 13px;
-  text-align: justify;
-  -moz-text-align-last: left;
-       text-align-last: left;
-  margin-left: 40px;
-  margin-right: 20px;
-  margin-top: 10px;
-}
-main section div {
+
+.card__caso {
   width: 500px;
   height: 350px;
   transition: height 2s;
@@ -98,14 +82,12 @@ main section div {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-main section div:hover {
+
+.card__caso:hover {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
   height: 380px;
 }
-main section div div img {
-  height: 70%;
-  width: 100%;
-}
+
 @-webkit-keyframes animaciones {
   0% {
     background-color: rgb(82, 82, 82);
@@ -123,6 +105,7 @@ main section div div img {
     background-color: rgb(82, 82, 82);
   }
 }
+
 @keyframes animaciones {
   0% {
     background-color: rgb(82, 82, 82);
@@ -140,21 +123,85 @@ main section div div img {
     background-color: rgb(82, 82, 82);
   }
 }
-
-* {
-  margin: 0;
-  padding: 0;
+@-webkit-keyframes animaciondos {
+  from {
+    background-color: rgb(3, 44, 54);
+  }
+  to {
+    background-color: rgb(20, 100, 120);
+  }
+}
+@keyframes animaciondos {
+  from {
+    background-color: rgb(3, 44, 54);
+  }
+  to {
+    background-color: rgb(20, 100, 120);
+  }
+}
+.imagen {
+  height: 50%;
+  width: 100%;
 }
 
-.contenedor {
-  display: grid;
-  grid-template-areas: "cabecera" "main" "footer";
-  grid-template-columns: 100%;
-  grid-template-rows: 130px auto 120px;
+.imagen__inicio {
+  height: 100%;
+  width: 100%;
 }
 
-.main {
-  grid-area: main;
+.imagen__caso {
+  height: 70%;
+  width: 100%;
+}
+
+.cuerpo__intro {
+  padding: 5px;
+}
+
+.intro__somos {
+  border-left: solid 12px rgb(37, 37, 52);
+  color: rgb(20, 100, 120);
+  font-family: poppins, sans-serif;
+  font-style: ExtraBold;
+  font-size: 40px;
+  padding-left: 15px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.intro__somos__texto {
+  color: rgb(82, 82, 82);
+  font-family: poppins, sans-serif;
+  font-style: ExtraLight;
+  font-size: 13px;
+  text-align: justify;
+  -moz-text-align-last: left;
+       text-align-last: left;
+  margin-left: 40px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.intro__caso {
+  color: rgb(196, 196, 196);
+  font-family: poppins, sans-serif;
+  font-style: ExtraBold;
+  font-size: 30px;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+
+.footer {
+  background-color: rgb(82, 82, 82);
+  border-top: solid 10px rgb(20, 100, 120);
+}
+
+.pie__pagina {
+  color: #FFFFFF;
+  font-family: poppins, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 30px;
 }
 
 /* nosotros */
@@ -190,15 +237,6 @@ main section div div img {
   background-color: rgb(82, 82, 82);
   margin: 30px;
   padding: 60px;
-  transition: height 2s;
-  -webkit-animation-name: animaciones;
-          animation-name: animaciones;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
 .intro__nosotros__mision {
@@ -246,8 +284,8 @@ main section div div img {
 }
 
 .servicios {
+  border-bottom: solid 2px rgb(82, 82, 82);
   padding: 30px;
-  margin-top: 20px;
 }
 
 .servicios__titulo {
@@ -298,7 +336,7 @@ main section div div img {
 
 /* portfolio */
 .portfolio {
-  background-image: linear-gradient(120deg, rgb(37, 37, 52), rgb(20, 100, 120));
+  background-color: rgb(37, 37, 52);
   margin: 0;
   padding: 50px;
 }
@@ -306,7 +344,6 @@ main section div div img {
 .imagen__portfolio {
   width: 50%;
   height: 50%;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio__titulo {
@@ -356,19 +393,10 @@ main section div div img {
   background-color: rgb(37, 37, 52);
   margin: 0;
   padding: 80px;
-  transition: height 2s;
-  -webkit-animation-name: animaciones;
-          animation-name: animaciones;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
 .contacto__titulo {
-  color: rgb(206, 206, 206);
+  color: rgb(20, 100, 120);
   border-left: #FFFFFF solid 15px;
   font-family: poppins, sans-serif;
   font-style: ExtraBold;
