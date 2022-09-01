@@ -1,3 +1,5 @@
+@import "./partials/header";
+
 * { 
     margin: 0;
     padding: 0;
@@ -57,31 +59,8 @@
 }
 
 
-.cabecera__nav ul {
-    display: flex;
-    list-style-type: none;
-    height: 50px;
-    width: 720px;
-    padding: 15px;
-    justify-content: space-around;
-    align-items: center;
-}
 
-.cabecera__nav ul li {
-    display: inline;
-    flex-wrap: wrap;
-    font-family: poppins, sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    text-align: center;
-    padding: 10px;
-    align-items: center;
-}
 
-.cabecera__nav ul li a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
 
 .cabecera__nav ul li a:hover {
     color: rgb(37, 37, 52);
