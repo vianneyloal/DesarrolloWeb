@@ -1,0 +1,25 @@
+body {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 130px auto 100px;
+  }
+  
+  @media screen and (max-width: 400px) {
+    .contenedor {
+      grid-template-areas: "cabecera" "main" "footer";
+      grid-template-columns: 100%;
+      grid-template-rows: 120px auto 100px;
+      background-color: rgb(196, 196, 196);
+    }
+    .cabecera {
+      background-color: rgb(37, 37, 52);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .contenedor {
+      grid-template-areas: "cabecera" "main" "footer";
+      grid-template-columns: 100%;
+      grid-template-rows: 180px auto 120px;
+    }
+  }
