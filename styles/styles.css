@@ -3,18 +3,52 @@
   padding: 0;
 }
 
-header {
+body {
+  width: auto;
+  height: auto;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-areas: "cabecera" "main" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 130px auto 100px;
+}
+.contenedor .cabecera {
   display: flex;
+  grid-area: cabecera;
   background-image: linear-gradient(60deg, rgb(20, 100, 120), rgb(3, 44, 54));
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
+.contenedor .main {
+  grid-area: main;
+}
+.contenedor .footer {
+  grid-area: footer;
+}
+
+@media screen and (max-width: 400px) {
+  .contenedor {
+    grid-template-areas: "cabecera" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 120px auto 100px;
+    background-color: rgb(196, 196, 196);
+  }
+  .cabecera {
+    background-color: rgb(37, 37, 52);
+  }
+}
+@media screen and (min-width: 768px) {
+  .contenedor {
+    grid-template-areas: "cabecera" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 180px auto 120px;
+  }
+}
 header nav {
   display: flex;
-  width: 50%;
-  top: 0;
-  right: 0;
 }
 header nav ul {
   display: flex;
@@ -43,22 +77,31 @@ header nav ul li a:hover {
   color: rgb(37, 37, 52);
 }
 
-main section {
+.intro {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 50px;
 }
-main section div {
+.intro .card__intro {
   width: 500px;
   height: 650px;
 }
-
-.card__intro:hover {
+.intro .card__intro:hover {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
-
-.card__caso {
+.intro .card__intro .imagen {
+  height: 50%;
+  width: 100%;
+}
+.intro .card__intro .imagen__inicio {
+  height: 100%;
+  width: 100%;
+}
+.intro .card__intro .cuerpo__intro {
+  padding: 5px;
+}
+.intro .card__caso {
   width: 500px;
   height: 350px;
   transition: height 2s;
@@ -71,12 +114,10 @@ main section div {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-
-.card__caso:hover {
+.intro .card__caso:hover {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
   height: 380px;
 }
-
 @-webkit-keyframes animaciones {
   0% {
     background-color: rgb(82, 82, 82);
@@ -94,7 +135,6 @@ main section div {
     background-color: rgb(82, 82, 82);
   }
 }
-
 @keyframes animaciones {
   0% {
     background-color: rgb(82, 82, 82);
@@ -112,46 +152,24 @@ main section div {
     background-color: rgb(82, 82, 82);
   }
 }
-@-webkit-keyframes animaciondos {
-  from {
-    background-color: rgb(3, 44, 54);
-  }
-  to {
-    background-color: rgb(20, 100, 120);
-  }
-}
-@keyframes animaciondos {
-  from {
-    background-color: rgb(3, 44, 54);
-  }
-  to {
-    background-color: rgb(20, 100, 120);
-  }
-}
-.imagen {
-  height: 50%;
-  width: 100%;
-}
-
-.imagen__inicio {
-  height: 100%;
-  width: 100%;
-}
-
-.imagen__caso {
+.intro .card__caso .imagen__caso {
   height: 70%;
   width: 100%;
 }
-
-.cuerpo__intro {
-  padding: 5px;
+.intro .card__caso .intro__caso {
+  color: rgb(196, 196, 196);
+  font-family: poppins, sans-serif;
+  font-style: ExtraBold;
+  font-size: 30px;
+  padding-left: 15px;
+  margin-top: 10px;
 }
 
 .intro__somos {
-  border-left: solid 12px rgb(37, 37, 52);
+  border-left: solid 12px rgb(82, 82, 82);
   color: rgb(20, 100, 120);
   font-family: poppins, sans-serif;
-  font-style: ExtraBold;
+  font-style: Extrabold;
   font-size: 40px;
   padding-left: 15px;
   margin-left: 10px;
@@ -171,40 +189,7 @@ main section div {
   margin-top: 10px;
 }
 
-.intro__caso {
-  color: rgb(196, 196, 196);
-  font-family: poppins, sans-serif;
-  font-style: ExtraBold;
-  font-size: 30px;
-  padding-left: 15px;
-  margin-top: 10px;
-}
-
-.footer {
-  background-color: rgb(82, 82, 82);
-  border-top: solid 10px rgb(20, 100, 120);
-}
-
-.pie__pagina {
-  color: #FFFFFF;
-  font-family: poppins, sans-serif;
-  font-size: 15px;
-  text-align: center;
-  padding-top: 30px;
-}
-
 /* nosotros */
-.contenido {
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.imagen__nosotros {
-  height: 100%;
-  width: 100%;
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
-}
-
 .nosotros {
   display: flex;
   justify-content: space-evenly;
@@ -212,10 +197,18 @@ main section div {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+.nosotros .imagen__nosotros {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
 
 .card__nosotros {
   width: 500px;
   height: 300px;
+}
+.card__nosotros .cuerpo__intro {
+  padding: 5px;
 }
 
 .mision {
@@ -226,17 +219,24 @@ main section div {
   background-color: rgb(82, 82, 82);
   margin: 30px;
   padding: 60px;
+  transition: height 2s;
+  -webkit-animation-name: animaciones;
+          animation-name: animaciones;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
-
-.intro__nosotros__mision {
+.mision .intro__nosotros__mision {
   color: #FFFFFF;
   font-family: poppins, sans-serif;
   font-style: ExtraBold;
   font-size: 35px;
   margin-top: 20px;
 }
-
-.intro__nosotros__texto {
+.mision .intro__nosotros__texto {
   color: #FFFFFF;
   font-family: poppins, sans-serif;
   font-style: light;
@@ -251,8 +251,7 @@ main section div {
   height: 100%;
   width: 100%;
 }
-
-.imagen__servicio {
+.imagen__servicios .imagen__servicio {
   height: 60%;
   width: 100%;
 }
@@ -267,13 +266,12 @@ main section div {
   height: 650px;
   margin-top: 20px;
 }
-
 .card__servicios:hover {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
 
 .servicios {
-  border-bottom: solid 2px rgb(82, 82, 82);
+  border-bottom: rgb(82, 82, 82);
   padding: 30px;
 }
 
@@ -329,13 +327,11 @@ main section div {
   margin: 0;
   padding: 50px;
 }
-
-.imagen__portfolio {
+.portfolio .imagen__portfolio {
   width: 50%;
   height: 50%;
 }
-
-.portfolio__titulo {
+.portfolio .portfolio__titulo {
   color: rgb(20, 100, 120);
   border-top: #FFFFFF solid 1px;
   font-family: poppins, sans-serif;
@@ -343,33 +339,29 @@ main section div {
   font-size: 60px;
   text-align: center;
 }
-
-.portfolio__texto {
+.portfolio .portfolio__texto {
   color: #FFFFFF;
   font-family: poppins, sans-serif;
   font-style: ExtraLight;
   font-size: 15px;
   text-align: center;
-  -moz-text-align-last: center;
-       text-align-last: center;
+  text-align-last: center;
+  text-align-last: center;
   margin-left: 100px;
   margin-right: 100px;
   margin-bottom: 30px;
 }
-
-.portfolio__proyecto {
+.portfolio .portfolio__proyecto {
   border: solid #FFFFFF 3px;
   padding: 50px;
 }
-
-.titulo__proyecto {
+.portfolio .portfolio__proyecto .titulo__proyecto {
   color: #FFFFFF;
   font-family: poppins, sans-serif;
   font-style: normal;
   font-size: 45px;
 }
-
-.texto__proyecto {
+.portfolio .portfolio__proyecto .texto__proyecto {
   color: #FFFFFF;
   font-family: poppins, sans-serif;
   font-style: normal;
@@ -415,52 +407,13 @@ main section div {
   font-size: 15px;
 }
 
-.contenedor {
-  display: grid;
-  grid-template-areas: "cabecera" "main" "footer";
-  grid-template-columns: 100%;
-  grid-template-rows: 130px auto 100px;
-}
 
-.cabecera {
-  display: flex;
-  grid-area: cabecera;
-  background-image: linear-gradient(60deg, rgb(20, 100, 120), rgb(3, 44, 54));
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
 
-.main {
-  grid-area: main;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-@media screen and (max-width: 400px) {
-  .contenedor {
-    grid-template-areas: "cabecera" "main" "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 120px auto 100px;
-    background-color: rgb(196, 196, 196);
-  }
-  .cabecera {
-    background-color: rgb(37, 37, 52);
-  }
-}
-@media screen and (min-width: 768px) {
-  .contenedor {
-    grid-template-areas: "cabecera" "main" "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 180px auto 120px;
-  }
-}
 footer {
   grid-area: footer;
   background-color: rgb(82, 82, 82);
   border-top: solid 10px rgb(20, 100, 120);
+  height: 150px;
 }
 footer p {
   color: #FFFFFF;
@@ -468,26 +421,4 @@ footer p {
   font-size: 15px;
   text-align: center;
   padding-top: 30px;
-}
-
-@media screen and (max-width: 400px) {
-  .contenedor {
-    grid-template-areas: "cabecera" "main" "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 120px auto 100px;
-    background-color: rgb(196, 196, 196);
-  }
-  .cabecera {
-    background-color: rgb(37, 37, 52);
-  }
-}
-@media screen and (min-width: 768px) {
-  .contenedor {
-    grid-template-areas: "cabecera" "main" "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 180px auto 120px;
-  }
-  /* .cabecera{
-      background-color: rgb(137, 137, 137);
-  } */
 }/*# sourceMappingURL=styles.css.map */

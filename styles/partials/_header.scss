@@ -1,15 +1,7 @@
 header{
-    display: flex;
-    background-image:linear-gradient(60deg, rgb(20, 100, 120), rgb(3, 44, 54));
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-
     nav{
         display: flex;
         width: 50%;
-        top: 0;
-        right: 0;
 
         ul{
         display: flex;
