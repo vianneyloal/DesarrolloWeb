@@ -1,5 +1,4 @@
 main{
-    grid-area: main;
     section{
         display: flex;
         justify-content: space-around;
@@ -11,4 +10,327 @@ main{
             height: 650px;
         }
     }
+}
+
+
+.card__intro:hover{
+    box-shadow: 0 20px 20px rgb(0 0 0 / 20%);
+}
+
+.card__caso{
+    width: 500px;
+    height: 350px;
+    transition: height 2s;
+    animation-name: animaciones;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+.card__caso:hover{
+    box-shadow: 0 20px 20px rgb(0 0 0 / 20%);
+    height: 380px;
+}
+
+@keyframes animaciones {
+    0% {background-color: rgb(82, 82, 82);}
+    25% {background-color: rgb(37, 37, 52);}
+    50% { background-color: rgb(3, 44, 54);}
+    75% { background-color: rgb(20, 100, 120);}
+    100% {background-color: rgb(82, 82, 82);}   
+}
+
+@keyframes animaciondos {
+    from {background-color: rgb(3, 44, 54);}
+    to {background-color: rgb(20, 100, 120);}
+    
+}
+
+.imagen {
+    height: 50%;
+    width: 100%;
+}
+
+.imagen__inicio {
+    height: 100%;
+    width: 100%;
+}
+
+.imagen__caso {
+    height: 70%;
+    width: 100%;
+}
+
+.cuerpo__intro{
+    padding: 5px;
+}
+
+.intro__somos {
+    border-left: solid 12px rgb(37, 37, 52);
+    color: rgb(20, 100, 120);
+    font-family: poppins, sans-serif;
+    font-style: ExtraBold;
+    font-size: 40px;
+    padding-left: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.intro__somos__texto {
+    color: rgb(82, 82, 82);
+    font-family: poppins, sans-serif;
+    font-style: ExtraLight;
+    font-size: 13px;
+    text-align: justify;
+    text-align-last: left;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.intro__caso {
+    color: rgb(196, 196, 196);
+    font-family: poppins, sans-serif;
+    font-style: ExtraBold;
+    font-size: 30px;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+
+
+.footer {
+    background-color: rgb(82, 82, 82);
+    border-top: solid 10px rgb(20, 100, 120);
+}
+
+.pie__pagina {
+    color: #FFFFFF;
+    font-family: poppins, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+    /* nosotros */
+
+.contenido{
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.imagen__nosotros {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 20px 20px rgb(0 0 0 / 20%);
+
+}
+
+.nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card__nosotros{
+    width: 500px;
+    height: 300px;
+}
+
+
+.mision {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(82, 82, 82);
+    margin: 30px;
+    padding: 60px;
+}
+
+.intro__nosotros__mision {
+    color:#FFFFFF;
+    font-family: poppins, sans-serif;
+    font-style: ExtraBold;
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.intro__nosotros__texto {
+    color: #FFFFFF;
+    font-family: poppins, sans-serif;
+    font-style: light;
+    font-size: 14px;
+    text-align: justify;
+    text-align-last: left;
+}
+
+    /* servicios */
+.imagen__servicios {
+    height: 100%;
+    width: 100%;
+}
+
+.imagen__servicio {
+    height: 60%;
+    width: 100%;
+}
+
+.imagen__inicio {
+    height: 100%;
+    width: 100%;
+}
+
+.card__servicios{
+    width: 600px;
+    height: 650px;
+    margin-top: 20px;
+}
+
+.card__servicios:hover{
+    box-shadow: 0 20px 20px rgb(0 0 0 / 20%);
+}
+
+.servicios {
+    border-bottom: solid 2px rgb(82, 82, 82);
+    padding: 30px;
+}
+
+.servicios__titulo {
+    color: rgb(20, 100, 120);
+    font-family: poppins, sans-serif;
+    font-style: ExtraBold;
+    font-size: 60px;
+    text-align: center;
+}
+
+.servicios__texto {
+    color: rgb(82, 82, 82);
+    font-family: poppins, sans-serif;
+    font-style: ExtraLight;
+    font-size: 13px;
+    text-align: center;
+    text-align-last: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.servicios__ejemplo {
+    margin: 50px;
+    border: solid 3px rgb(82, 82, 82);
+    border-color: rgb(82, 82, 82);
+    padding: 60px;
+}
+
+.titulo__servicio {
+    color: rgb(20, 100, 120);
+    font-family: poppins, sans-serif;
+    font-style: Bold;
+    font-size: 30px;
+    
+}
+
+.texto__servicio {
+    color: rgb(37, 37, 52);
+    border-left: solid 2px rgb(20, 100, 120);
+    font-family: poppins, sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    text-align: justify;
+    text-align-last: left;
+    padding-left: 25px;
+}
+
+    /* portfolio */
+.portfolio {
+    background-color: rgb(37, 37, 52);
+    margin: 0;
+    padding: 50px;
+}
+
+.imagen__portfolio{
+    width: 50%;
+    height: 50%;
+}
+
+.portfolio__titulo {
+    color: rgb(20, 100, 120);
+    border-top: #FFFFFF solid 1px;
+    font-family: poppins, sans-serif;
+    font-style: ExtraBold;
+    font-size: 60px;
+    text-align: center;
+}
+
+.portfolio__texto {
+    color: #FFFFFF;
+    font-family: poppins, sans-serif;
+    font-style: ExtraLight;
+    font-size: 15px;
+    text-align: center;
+    text-align-last: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+}
+
+.portfolio__proyecto {
+    border: solid #FFFFFF 3px;
+    padding: 50px;
+}
+
+.titulo__proyecto {
+    color: #FFFFFF;
+    font-family: poppins, sans-serif;
+    font-style: normal;
+    font-size: 45px;
+
+}
+
+.texto__proyecto {
+    color: #FFFFFF;
+    font-family: poppins, sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+    /*contacto*/
+.contacto {
+    background-color: rgb(37, 37, 52);
+    margin: 0;
+    padding: 80px;
+}
+
+.contacto__titulo {
+    color: rgb(20, 100, 120);
+    border-left: #FFFFFF solid 15px;
+    font-family: poppins, sans-serif;
+    font-style: ExtraBold;
+    font-size: 50px;
+    padding-left: 20px;
+}
+
+.contacto__texto {
+    color: #FFFFFF;
+    font-family: poppins, sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.formulario {
+    border: solid rgb(20, 100, 120) 5px;
+    margin: 60px;
+    margin-right: 500px;
+    padding: 50px;
+}
+
+.texto__formulario {
+    color: rgb(37, 37, 52);
+    font-family: poppins, sans-serif;
+    font-style: bold;
+    font-size: 15px;
 }
