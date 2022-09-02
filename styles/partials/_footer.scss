@@ -1,13 +1,14 @@
 footer{
     grid-area: footer;
-    background-color: rgb(82, 82, 82);
-    border-top: solid 10px $colorprimary;
+    background-color: $colorgrisclaro;
+    border-top: solid 10px $colorazul;
+    height: 150px;
 
     p{
         color: #FFFFFF;
         font-family: poppins, sans-serif;
         font-size: 15px;
         text-align: center;
-        padding-top: 30px;
+        padding-top: 50px;
     }
 }

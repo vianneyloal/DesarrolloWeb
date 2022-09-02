@@ -1,0 +1,26 @@
+%botonInicio{
+    padding: 10px;
+    border: none;
+    border-radius: 07px;
+    font-size: 18px;
+}
+
+%subtitulos {
+    font-family: poppins, sans-serif;
+    font-style: ExtraBold;
+    font-size: 40px;
+    color: $colorazul;
+}
+
+%flexRow {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+%flexNosotros {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
