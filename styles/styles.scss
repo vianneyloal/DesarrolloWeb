@@ -1,19 +1,5 @@
-@import "./partials/header", "./partials/main";
+@import "./partials/variables", "./partials/generales", "./partials/header", "./partials/main", "./partials/grids", "./partials/footer" ;
 
-* { 
-    margin: 0;
-    padding: 0;
-
-    }
-
-.contenedor{
-    display: grid;
-    grid-template-areas: "cabecera"
-                        "main"
-                        "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 130px auto 100px;
-}
 
 
 .card__intro:hover{
