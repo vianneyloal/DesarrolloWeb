@@ -1,4 +1,4 @@
-.body {
+body {
   display: grid;
   grid-template-areas: "header" "main" "footer";
   grid-template-columns: 100%;
@@ -22,7 +22,4 @@
     grid-template-columns: 100%;
     grid-template-rows: 180px auto 120px;
   }
-  /* .cabecera{
-      background-color: rgb(137, 137, 137);
-  } */
-}/*# sourceMappingURL=grids.css.map */
+}
