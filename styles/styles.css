@@ -415,6 +415,48 @@ main section div {
   font-size: 15px;
 }
 
+.contenedor {
+  display: grid;
+  grid-template-areas: "cabecera" "main" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 130px auto 100px;
+}
+
+.cabecera {
+  display: flex;
+  grid-area: cabecera;
+  background-image: linear-gradient(60deg, rgb(20, 100, 120), rgb(3, 44, 54));
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+@media screen and (max-width: 400px) {
+  .contenedor {
+    grid-template-areas: "cabecera" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 120px auto 100px;
+    background-color: rgb(196, 196, 196);
+  }
+  .cabecera {
+    background-color: rgb(37, 37, 52);
+  }
+}
+@media screen and (min-width: 768px) {
+  .contenedor {
+    grid-template-areas: "cabecera" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 180px auto 120px;
+  }
+}
 footer {
   background-color: rgb(82, 82, 82);
   border-top: solid 10px rgb(20, 100, 120);
