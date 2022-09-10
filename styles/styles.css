@@ -12,10 +12,8 @@ body {
   display: grid;
   grid-template-areas: "cabecera" "main" "footer";
   grid-template-columns: 100%;
-  grid-template-rows: 130px auto 100px;
+  grid-template-rows: 150px auto 130px;
 }
-
-
 .contenedor .cabecera {
   display: flex;
   grid-area: cabecera;
@@ -78,6 +76,11 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   color: rgb(37, 37, 52);
+}
+
+.home {
+  font-family: poppins, sans-serif;
+  color: #FFFFFF;
 }
 
 .intro {
@@ -170,10 +173,6 @@ header nav ul li a:hover {
 
 .intro__somos {
   border-left: solid 12px rgb(82, 82, 82);
-  color: rgb(20, 100, 120);
-  font-family: poppins, sans-serif;
-  font-style: Extrabold;
-  font-size: 40px;
   padding-left: 15px;
   margin-left: 10px;
   margin-top: 10px;
@@ -194,9 +193,6 @@ header nav ul li a:hover {
 
 /* nosotros */
 .nosotros {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -215,10 +211,6 @@ header nav ul li a:hover {
 }
 
 .mision {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
   background-color: rgb(82, 82, 82);
   margin: 30px;
   padding: 60px;
@@ -326,7 +318,7 @@ header nav ul li a:hover {
 
 /* portfolio */
 .portfolio {
-  background-color: rgb(37, 37, 52);
+  background-color: rgb(3, 44, 54);
   margin: 0;
   padding: 50px;
 }
@@ -348,8 +340,8 @@ header nav ul li a:hover {
   font-style: ExtraLight;
   font-size: 15px;
   text-align: center;
-  text-align-last: center;
-  text-align-last: center;
+  -moz-text-align-last: center;
+       text-align-last: center;
   margin-left: 100px;
   margin-right: 100px;
   margin-bottom: 30px;
@@ -374,12 +366,10 @@ header nav ul li a:hover {
 
 /*contacto*/
 .contacto {
-  background-color: rgb(37, 37, 52);
-  margin: 0;
+  background-color: rgb(3, 44, 54);
   padding: 80px;
 }
-
-.contacto__titulo {
+.contacto .contacto__titulo {
   color: rgb(20, 100, 120);
   border-left: #FFFFFF solid 15px;
   font-family: poppins, sans-serif;
@@ -387,8 +377,7 @@ header nav ul li a:hover {
   font-size: 50px;
   padding-left: 20px;
 }
-
-.contacto__texto {
+.contacto .contacto__texto {
   color: #FFFFFF;
   font-family: poppins, sans-serif;
   font-style: normal;
@@ -402,15 +391,12 @@ header nav ul li a:hover {
   margin-right: 500px;
   padding: 50px;
 }
-
-.texto__formulario {
-  color: rgb(37, 37, 52);
+.formulario .texto__formulario {
+  color: rgb(3, 44, 54);
   font-family: poppins, sans-serif;
   font-style: bold;
   font-size: 15px;
 }
-
-
 
 footer {
   grid-area: footer;
@@ -423,5 +409,32 @@ footer p {
   font-family: poppins, sans-serif;
   font-size: 15px;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 50px;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  border-radius: 7px;
+  font-size: 18px;
+}
+
+.intro__somos {
+  font-family: poppins, sans-serif;
+  font-style: ExtraBold;
+  font-size: 40px;
+  color: rgb(20, 100, 120);
+}
+
+.mision {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nosotros {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=styles.css.map */
