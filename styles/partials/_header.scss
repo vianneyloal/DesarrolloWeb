@@ -1,0 +1,57 @@
+.navbar{
+    height: 150px;
+    padding: 40px;
+    background-image:linear-gradient(30deg, rgb(20, 100, 120), rgb(7, 43, 52));
+}
+
+.nav-item{
+    font-family: poppins, sans-serif;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.nav-link{
+    color: #FFFFFF;
+}
+
+header{
+    nav{
+        display: flex;
+        width: 50%;
+
+        ul{
+        display: flex;
+        list-style-type: none;
+        height: 50px;
+        width: 720px;
+        padding: 15px;
+        justify-content: space-around;
+        align-items: center;
+        
+            li{
+                display: inline;
+                flex-wrap: wrap;
+                font-family: poppins, sans-serif;
+                font-size: 15px;
+                font-style: normal;
+                text-align: center;
+                padding: 10px;
+                align-items: center;
+
+                a{
+                    color: #FFFFFF;
+                    text-decoration: none;
+
+                &:hover{
+                    color: rgb(37, 37, 52);
+                }
+                }
+            }
+        }
+        }
+    }
+
+.home {
+    font-family: $font;
+    color: #FFFFFF;
+}
