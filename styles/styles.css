@@ -413,13 +413,15 @@ header nav ul li a:hover {
   background-color: rgb(82, 82, 82);
   border-top: solid 15px rgb(20, 100, 120);
   height: 170px;
+  align-items: center;
 }
 .footer .pie__pagina {
   color: #FFFFFF;
   font-family: poppins, sans-serif;
+  font-style: ExtraLight;
   font-size: 13px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .intro__somos {

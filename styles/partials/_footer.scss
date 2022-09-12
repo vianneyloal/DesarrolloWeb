@@ -3,12 +3,14 @@
     background-color: $colorgrisclaro;
     border-top: solid 15px $colorazul;
     height: 170px;
+    align-items: center;
 
     .pie__pagina {
         color: #FFFFFF;
         font-family: poppins, sans-serif;
+        font-style: ExtraLight;
         font-size: 13px;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 30px;
     }
 }
