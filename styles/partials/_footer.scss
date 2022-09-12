@@ -1,0 +1,14 @@
+.footer{
+    grid-area: footer;
+    background-color: $colorgrisclaro;
+    border-top: solid 15px $colorazul;
+    height: 170px;
+
+    .pie__pagina {
+        color: #FFFFFF;
+        font-family: poppins, sans-serif;
+        font-size: 13px;
+        text-align: center;
+        padding-top: 20px;
+    }
+}
