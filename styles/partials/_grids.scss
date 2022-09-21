@@ -4,7 +4,7 @@
                         "main"
                         "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 150px auto 180px;
+    grid-template-rows: 160px auto 180px;
 
     .cabecera {
         display: flex;
@@ -30,7 +30,7 @@
     .contenedor {
     grid-template-areas: "cabecera" "main" "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 120px auto 100px;
+    grid-template-rows: auto auto 100px;
     background-color: rgb(196, 196, 196);
     }
     .cabecera {
@@ -42,6 +42,6 @@
     .contenedor {
     grid-template-areas: "cabecera" "main" "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 180px auto 120px;
+    grid-template-rows: 150px auto 120px;
     }
 }

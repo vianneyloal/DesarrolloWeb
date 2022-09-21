@@ -280,9 +280,23 @@
 .contacto {
     background-color: $colorazuloscuro;
     padding: 80px;
+    transition: height 2s;
+    animation-name: animaciones;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+
+
+    @keyframes animaciones {
+        0% {background-color: rgb(82, 82, 82);}
+        25% {background-color: rgb(37, 37, 52);}
+        50% { background-color: rgb(3, 44, 54);}
+        75% { background-color: rgb(20, 100, 120);}
+        100% {background-color: rgb(82, 82, 82);}   
+    }
 
     .contacto__titulo {
-        color: $colorazul;
+        color: #FFFFFF;
         border-left: #FFFFFF solid 15px;
         font-family: $font;
         font-style: ExtraBold;

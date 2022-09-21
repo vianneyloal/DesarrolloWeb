@@ -2,8 +2,10 @@
     grid-area: footer;
     background-color: $colorgrisclaro;
     border-top: solid 15px $colorazul;
+    box-shadow: 20px 15px 20px 20px rgb(0 0 0 / 50%);
     height: 170px;
     align-items: center;
+
 
     .pie__pagina {
         color: #FFFFFF;
