@@ -1,14 +1,18 @@
-footer{
+.footer{
     grid-area: footer;
     background-color: $colorgrisclaro;
-    border-top: solid 10px $colorazul;
-    height: 150px;
+    border-top: solid 15px $colorazul;
+    box-shadow: 20px 15px 20px 20px rgb(0 0 0 / 50%);
+    height: 170px;
+    align-items: center;
 
-    p{
+
+    .pie__pagina {
         color: #FFFFFF;
         font-family: poppins, sans-serif;
-        font-size: 15px;
+        font-style: ExtraLight;
+        font-size: 13px;
         text-align: center;
-        padding-top: 50px;
+        padding-top: 30px;
     }
 }
