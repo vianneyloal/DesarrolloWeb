@@ -2,32 +2,48 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <!-- styles -->
         <link rel="stylesheet" href="../styles/styles.css">
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="keywords" content="geography, geology, geospatial,drones">
-        <meta name="description" content="Este es un sitio de servicios de Geografía, Topografía y Geomática">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="geography, geology, geospatial,drones">
-        <meta name="description" content="Este es un sitio de servicios de Geografía, Topografía y Geomática">
         <title>Servicios</title>
     </head>
     <body class="contenedor">
-        <header class="cabecera">
-            <div class="caja__logo">     
-                <a href="../index.html"><img src="../images/logo_romval.png"></a>    
-            </div>
-                <nav class="cabecera__nav">
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="../pages/servicios.html">Servicios</a></li>
-                        <li><a href="../pages/portfolio.html">Portfolio</a></li>
-                        <li><a href="../pages/contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
+        <header>
+            <nav class="navbar navbar-expand-lg cabecera" style="background-color: rgb(20, 100, 120);">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../images/logo_romval.png" alt="logo romval">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
         <main class="main">
             <section>
@@ -39,49 +55,36 @@
                     <p class="servicios__texto">Somos una empresa dedicada a proveer datos geoespaciales; Imágenes Satelitales, Software para Teledetección, Sistemas de Información Geográfica, Data para Location Intelligence, Servicios de Procesamiento y Análisis para Teledetección, Capacitación, y Soluciones Integrales para diversos mercados.</p> 
                 </div>
             </section>
-            <section class="intro">
-                <div class="card__servicios">
-                    <div class="imagen__servicio">
-                        <img class="imagen__inicio" src="../images/satellite-image-of-earth-original-from-nasa-digitally-enhanced-by-rawpixel-free-image-by-rawpix.jpg">
-                    </div>
-                    <div class="cuerpo__intro">
-                        <h3 class="titulo__servicio">IMÁGENES SATELITALES</h3>
-                        <br />
-                        <p class="texto__servicio">Los satélites recorren una órbita alrededor de la Tierra a diferentes alturas. Son idóneos para la detección de incendios, determinación de la biomasa, estudio de la capa de ozono, por mencionar algunas aplicaciones.</p>
-                        <p class="texto__servicio">Los satélites que observan la Tierra obtienen información diversa de los recursos naturales, los océanos, el crecimiento urbano, la agricultura, ganadería, pesca, los bosques, los desastres naturales, la seguridad nacional, entre otros. </p>
-                    </div>    
-                </div>
-                <div class="card__servicios">
-                    <div class="imagen__servicio">
-                        <img class="imagen__inicio" src="../images/closeup-of-pins-on-the-map-planning-travel-journey.jpg">
-                    </div>
-                    <div class="cuerpo__intro">
-                        <h3 class="titulo__servicio">TELEDETECCIÓN</h3>
-                        <br />
-                        <p class="texto__servicio">Somos distribuidores de CATALYST de PCI Geomatics, creador de CATALYST Professional, el principal software de Teledetección, el cual es simplemente el mejor en corrección atmosférica, ortorectificación, creación de mosaicos y extracción de MDE. Su portafolio permite a nuestros clientes hacer del análisis de los datos una práctica fácil y rentable.</p>
+            <section class="row">
+                <div class="card col-sm-12 col-md-12 col-lg-3 ms-5 mb-3">
+                    <img src="../images/satellite-image-of-earth-original-from-nasa-digitally-enhanced-by-rawpixel-free-image-by-rawpix.jpg" class="card-img-top w-100" alt="Imagen satelital de la tierra">
+                    <div class="card-body">
+                        <h5 class="card-title">IMÁGENES SATELITALES</h5>
+                        <p class="card-text">Los satélites recorren una órbita alrededor de la Tierra a diferentes alturas. Son idóneos para la detección de incendios, determinación de la biomasa, estudio de la capa de ozono, por mencionar algunas aplicaciones.
+                            Los satélites que observan la Tierra obtienen información diversa de los recursos naturales, los océanos, el crecimiento urbano, la agricultura, ganadería, pesca, los bosques, los desastres naturales, la seguridad nacional, entre otros.</p>
                     </div>
                 </div>
-                <div class="card__servicios">
-                    <div class="imagen__servicio">
-                        <img class="imagen__inicio" src="../images/how-is-your-deals-group-of-people-at-business-conference-in-modern-classroom-at-daytime.jpg">
+                <div class="card col-sm-12 col-md-12 col-lg-3 ms-5 mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">TELEDETECCIÓN</h5>
+                        <p class="card-text">Somos distribuidores de CATALYST de PCI Geomatics, creador de CATALYST Professional, el principal software de Teledetección, el cual es simplemente el mejor en corrección atmosférica, ortorectificación, creación de mosaicos y extracción de MDE. Su portafolio permite a nuestros clientes hacer del análisis de los datos una práctica fácil y rentable.</p>
                     </div>
-                    <div class="cuerpo__intro">
-                        <h3 class="titulo__servicio">CAPACITACIÓN</h3>
-                        <br />
-                        <p class="texto__servicio">Somos la empresa privada en México líder en capacitación en tecnología de aplicación en ciencias de la tierra, dirigida a investigadores, científicos, asesores, técnicos y cualquier profesional que desee hacer más eficiente su trabajo y los recursos con los que trabaja.</p>
-                    </div>    
-                </div> 
+                    <img src="../images/closeup-of-pins-on-the-map-planning-travel-journey.jpg" class="card-img-bottom" alt="Mapa con ruta">
+                </div>
+                <div class="card col-sm-12 col-md-12 col-lg-3 ms-5 mb-3">
+                    <img src="../images/how-is-your-deals-group-of-people-at-business-conference-in-modern-classroom-at-daytime.jpg" class="card-img-top" alt="Personas en una capacitación">
+                    <div class="card-body">
+                        <h5 class="card-title">CAPACITACIÓN</h5>
+                        <p class="card-text">Somos la empresa privada en México líder en capacitación en tecnología de aplicación en ciencias de la tierra, dirigida a investigadores, científicos, asesores, técnicos y cualquier profesional que desee hacer más eficiente su trabajo y los recursos con los que trabaja.</p>
+                    </div>
+                </div>
             </section>
         </main>
         <footer class="footer">
             <p class="pie__pagina">Correo electrónico: romvalingenieria@gmail.com | Teléfono: 728 690 5749 | Celular: 722 537 7254</p>
             <p class="pie__pagina">© Copyrigth 2022</p>
-<<<<<<< HEAD
-    </footer>
-=======
         </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </body>
->>>>>>> proyectofinal
 </html>
